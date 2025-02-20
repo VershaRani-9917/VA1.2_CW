@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+     <title>replit</title>
+   
+  </head>
+  <body>
+    <label for="nameInput">Enter your name:</label>
+    <input type="text" id="nameInput"/>
+    <button id="greetButton">Greet</button>
+    <p id="ShowGreetingMessage"></p>
+    
+    <label for="emailInput">Enter your Email:</label>
+    <input type="email" id="emailInput"/>
+    <button id="validateEmailButton">Validate Button </button>
+    <p id="emailValidationResult"></p>
+
+
+    <script>
+      //get the dom element
+      const nameInput = document.getElementById("nameInput")
+      const greatButton = document.getElementById("greetButton")
+      const GreetingMessage = document.getElementById("ShowGreetingMessage")
+
+      
+      
+      //What you want to do with the dom element
+      greetingMessage.addEventListener("click",function(){
+         const userName = nameInput.value
+         greetingMessage.textContent = `Hello , ${userName}`
+      })
+
+const emailInput = document.getElementById("emailInput")
+const validateEmailButton = document.getElementById
+const emailValidationResult =  document.getElementById("emailValidationResult")
+
+validateEmailButton.addEventListener("click", function(){
+const email = emailInput.value
+
+const atIndex = email.indexOf("@")
+const dotIndex = email.indexOf(".")
+
+console.log(atIndex)
+console.log(dotIndex) 
+  
+})
+
+
+
+
+      
+
+    </script>
+  </body>
+</html>
